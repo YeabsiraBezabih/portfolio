@@ -1,0 +1,55 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "image": "../src/assets/images/portfolio.jpg",
+      "title": "Portfolio Website",
+      "description": "A personal portfolio website to showcase skills, projects, and experiences.",
+      "demo": "https://example.com/portfolio",
+      "techStack": ["React", "Vite", "Tailwind CSS", "Font Awesome"],
+      "details": "This portfolio website includes sections for home, about, projects, and contact information. It is designed to be fully responsive and dynamic."
+    },
+    {
+      "id": 2,
+      "image": "../src/assets/images/ecommerce.jpg",
+      "title": "E-commerce Website",
+      "description": "An online store with product listings, shopping cart, and checkout functionalities.",
+      "demo": "https://example.com/ecommerce",
+      "techStack": ["React", "Node.js", "Express", "MongoDB"],
+      "details": "The e-commerce site features a user-friendly interface for browsing products, adding items to the cart, and completing purchases. It includes user authentication and payment integration."
+    },
+    {
+      "id": 3,
+      "image": "../src/assets/images/dashboard.jpg",
+      "title": "Admin Dashboard",
+      "description": "A dashboard for managing and monitoring various aspects of a web application.",
+      "demo": "https://example.com/admin-dashboard",
+      "techStack": ["React", "Tailwind CSS", "Chart.js"],
+      "details": "This admin dashboard provides tools for data visualization, user management, and application monitoring. It is designed with an intuitive UI and customizable components."
+    },
+    {
+      "id": 4,
+      "image": "../src/assets/images/finance.png",
+      "title": "Personal Finance Manager",
+      "description": "A web application to track personal finances, including income, expenses, and budget planning.",
+      "demo": "https://example.com/finance-manager",
+      "techStack": ["React", "Redux", "Tailwind CSS"],
+      "details": "The personal finance manager allows users to record transactions, categorize expenses, and visualize spending trends. It includes features for setting and tracking financial goals."
+    }
+  ],
+  "testimonials": [
+      {
+        "quote": "Yeabsira consistently demonstrates exceptional skills and dedication in every project. Their problem-solving abilities and attention to detail are truly impressive.",
+        "author": "John Doe, Senior Developer at TechCorp"
+      },
+      {
+        "quote": "Yeabsira has a keen eye for detail and an excellent work ethic. Her ability to handle complex tasks and deliver high-quality results is remarkable.",
+        "author": "Jane Smith, Product Manager at Innovate Inc."
+      },
+      {
+        "quote": "Working with Yeabsira has been a fantastic experience. Their creativity, technical expertise, and commitment to excellence make them a standout professional.",
+        "author": "Alex Johnson, Lead Engineer at Creative Solutions"
+      }
+    ]
+  
+}

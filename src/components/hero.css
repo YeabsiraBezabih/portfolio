@@ -1,0 +1,221 @@
+.hero {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px; /* Add padding for smaller screens */
+}
+
+.marquee {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%);
+  overflow: hidden;
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+}
+
+.marquee__inner {
+  display: flex;
+  white-space: nowrap;
+  position: relative;
+  animation: marquee 20s linear infinite;
+}
+
+.greeting {
+  font-size: 8vw; 
+  padding: 0 2vw;
+  background: linear-gradient(30deg, rgba(55, 52, 108, 0.411) 0%, rgba(9,9,121,1) 35%, rgb(29, 206, 250) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.greeting:hover {
+  animation: glitch 1s infinite;
+}
+
+/* Glitch effect */
+@keyframes glitch {
+  0% { transform: translateX(0); color: #fc3737af;}
+  10% { transform: translateX(-10px); color: #4ffd4f92; }
+  20% { transform: translateX(10px); color: #2142fd58; }
+  30% { transform: translateX(-10px); color: #fc3737af; }
+  40% { transform: translateX(10px); color: #4ffd4f92;}
+  50% { transform: translateX(-10px); color: #2142fd58;}
+  60% { transform: translateX(10px); color: #fc3737af; }
+  70% { transform: translateX(-10px); color: #4ffd4f92;}
+  80% { transform: translateX(10px); color: #2142fd58;}
+  90% { transform: translateX(-10px);color: #fc3737af; }
+  100% { transform: translateX(0); color: #4ffd4f92;}
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(-24.5%);
+  }
+  to {
+    transform: translateX(-260%);
+  }
+}
+
+
+.hero-photo-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-bottom: 30px;
+  border-bottom: 1px solid white;
+}
+
+.hero-photo {
+  width: 60%; /* Adjust width for smaller screens */
+  max-width: 350px; /* Max width for larger screens */
+  object-fit: cover;
+  z-index: 2;
+  transition: transform 0.3s ease-in-out;
+}
+
+.hero-photo:hover {
+  transform: scale(1.05);
+}
+
+.typed-container {
+  position: absolute;
+  bottom: 20%; /* Adjusted for smaller screens */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.typed-text {
+  position: inherit;
+  font-size: 3rem; /* Adjust font size for smaller screens */
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.stroked-text {
+  position: inherit;
+  color: transparent;
+  -webkit-text-stroke: 1px #fff; /* Adjust stroke width for smaller screens */
+  z-index: 3;
+}
+
+.hero-buttons {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically on smaller screens */
+  gap: 10px; /* Reduce gap between buttons on smaller screens */
+  z-index: 10;
+}
+
+.hero-button {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 8px 16px;
+  text-transform: capitalize;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: all 0.5s;
+  font-weight: 600;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.hero-button:nth-of-type(1) {
+  position: inherit;
+  bottom: 100px;
+  left: 10%;
+}
+
+.hero-button:nth-of-type(2) {
+  position: inherit;
+  bottom: 50px;
+  left: 10%;
+}
+
+.hero-button:hover {
+  color: rgba(14, 108, 215, 0.89);
+}
+
+.hero-bg-logo {
+  position: absolute;
+  bottom: 0;
+  right: -50px;
+  width: 80%;
+  height: 80%;
+  background-image: url('../assets/images/logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.2;
+  filter: blur(8px);
+  z-index: 0;
+}
+
+/* Media Queries for Responsiveness */
+@media (min-width: 768px) {
+  .hero-photo {
+    width: 350px;
+  }
+
+  .typed-text {
+    font-size: 4rem;
+  }
+
+  .hero-buttons {
+    flex-direction: row;
+    gap: 20px;
+    bottom: 5%;
+    left: 5%;
+  }
+
+  .hero-button:nth-of-type(1) {
+    position: inherit;
+    bottom: 190px;
+    left: 150px;
+  }
+
+  .hero-button:nth-of-type(2) {
+    position: inherit;
+    bottom: 190px;
+    left: 850px;
+  }
+
+  .hero-bg-logo {
+    right: -100px;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .greeting {
+    font-size: 10vw; /* Larger font size for bigger screens */
+  }
+
+  .typed-text {
+    font-size: 5rem;
+  }
+
+  .hero-button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  .hero-bg-logo {
+    right: -100px;
+  }
+}

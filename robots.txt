@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /private/
+Allow: /
+
+Sitemap: https://yeabsirabezabih.github.io/sitemap.xml
+
