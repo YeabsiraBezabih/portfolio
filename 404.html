@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Page Not Found</title>
+    <meta http-equiv="refresh" content="0; URL='./index.html?from=404'" />
+    <script>
+      // Redirect all routes to index.html to be handled by React Router
+      var path = window.location.pathname;
+      var newUrl = window.location.origin + '/index.html?redirect=' + encodeURIComponent(path);
+      window.location.replace(newUrl);
+    </script>
+  </head>
+  <body>
+    <h1>Page not found</h1>
+    <p>Redirecting...</p>
+  </body>
+</html>

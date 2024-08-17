@@ -2,7 +2,7 @@
   "projects": [
     {
       "id": 1,
-      "image": "../src/assets/images/portfolio.jpg",
+      "image": "./assets/portfolio.jpg",
       "title": "Portfolio Website",
       "description": "A personal portfolio website to showcase skills, projects, and experiences.",
       "demo": "https://example.com/portfolio",
@@ -11,7 +11,7 @@
     },
     {
       "id": 2,
-      "image": "../src/assets/images/ecommerce.jpg",
+      "image": "./assets/ecommerce.jpg",
       "title": "E-commerce Website",
       "description": "An online store with product listings, shopping cart, and checkout functionalities.",
       "demo": "https://example.com/ecommerce",
@@ -20,7 +20,7 @@
     },
     {
       "id": 3,
-      "image": "../src/assets/images/dashboard.jpg",
+      "image": "./assets/dashboard.jpg",
       "title": "Admin Dashboard",
       "description": "A dashboard for managing and monitoring various aspects of a web application.",
       "demo": "https://example.com/admin-dashboard",
@@ -29,7 +29,7 @@
     },
     {
       "id": 4,
-      "image": "../src/assets/images/finance.png",
+      "image": "./assets/finance.png",
       "title": "Personal Finance Manager",
       "description": "A web application to track personal finances, including income, expenses, and budget planning.",
       "demo": "https://example.com/finance-manager",
